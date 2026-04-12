@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Análisis de Series de Tiempo Financieras — Microsoft (MSFT) &#8212; My sample book</title>
+    <title>Análisis Exploratorio de Datos Financieros para la Identificación de Estructuras Latentes en las Acciones de Microsoft (2000 - 2026) &#8212; My sample book</title>
   
   
   
@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -177,7 +177,7 @@
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1 current active">
                 <a class="reference internal" href="#">
-                    Análisis de Series de Tiempo Financieras — Microsoft (MSFT)
+                    Análisis Exploratorio de Datos Financieros para la Identificación de Estructuras Latentes en las Acciones de Microsoft (2000 - 2026)
                 </a>
             </li>
         </ul>
@@ -365,7 +365,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Análisis de Series de Tiempo Financieras — Microsoft (MSFT)</h1>
+    <h1>Análisis Exploratorio de Datos Financieros para la Identificación de Estructuras Latentes en las Acciones de Microsoft (2000 - 2026)</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -375,7 +375,7 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Análisis de Series de Tiempo Financieras — Microsoft (MSFT)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Análisis Exploratorio de Datos Financieros para la Identificación de Estructuras Latentes en las Acciones de Microsoft (2000 - 2026)</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduccion">Introducción</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contextualizacion">Contextualización</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#planteamiento-del-problema">Planteamiento del Problema</a><ul class="nav section-nav flex-column">
@@ -390,6 +390,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#marco-teorico">Marco Teórico</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#retorno">Retorno</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#volatilidad">Volatilidad</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#estabilizacion-de-la-serie-retornos-logaritmicos">Estabilización de la Serie: Retornos Logarítmicos</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modelos-de-descomposicion">Modelos de Descomposición</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#modelo-aditivo">Modelo Aditivo</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#modelo-multiplicativo">Modelo Multiplicativo</a></li>
@@ -426,6 +427,7 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#estabilidad-de-la-serie">Estabilidad de la serie</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#conlusiones">Conlusiones</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#fuentes">Fuentes</a></li>
 </ul>
 
@@ -439,8 +441,8 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="analisis-de-series-de-tiempo-financieras-microsoft-msft">
-<h1>Análisis de Series de Tiempo Financieras — Microsoft (MSFT)<a class="headerlink" href="#analisis-de-series-de-tiempo-financieras-microsoft-msft" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="analisis-exploratorio-de-datos-financieros-para-la-identificacion-de-estructuras-latentes-en-las-acciones-de-microsoft-2000-2026">
+<h1>Análisis Exploratorio de Datos Financieros para la Identificación de Estructuras Latentes en las Acciones de Microsoft (2000 - 2026)<a class="headerlink" href="#analisis-exploratorio-de-datos-financieros-para-la-identificacion-de-estructuras-latentes-en-las-acciones-de-microsoft-2000-2026" title="Link to this heading">#</a></h1>
 <section id="introduccion">
 <h2>Introducción<a class="headerlink" href="#introduccion" title="Link to this heading">#</a></h2>
 <p>El presente Análisis Exploratorio de Datos (EDA) tiene como objetivo estudiar el comportamiento histórico de los precios de las acciones de Microsoft a partir de un conjunto de datos diarios que incluye variables como los precios de apertura, máximo, mínimo y cierre ajustado, así como el volumen de negociación. Este análisis se enmarca dentro del estudio de series de tiempo financieras, donde el interés principal radica en comprender cómo evolucionan los precios de una acción a lo largo del tiempo y qué patrones pueden identificarse en dicha evolución.</p>
@@ -470,10 +472,10 @@ document.write(`
 <section id="objetivos-especificos">
 <h3>Objetivos Específicos<a class="headerlink" href="#objetivos-especificos" title="Link to this heading">#</a></h3>
 <ul class="simple">
-<li><p><strong>Validar Estacionariedad:</strong> Aplicar la prueba ADF para identificar la presencia de raíces unitarias en la serie de precios de MSFT (Heimann, 2016).</p></li>
-<li><p><strong>Identificar Tendencia:</strong> Implementar medias móviles en ventana diaria, trimestral y anual <span class="math notranslate nohighlight">\((n=1, n= 60, n=252)\)</span> como herramienta de suavizamiento para mitigar el ruido en la serie temporal (Sureshkumar et al., 2013).</p></li>
-<li><p><strong>Analizar Riesgo:</strong> Determinar el grado de Leptocurtosis en la distribución de los retornos logarítmicos como medida del riesgo de cola (Mittnik et al., 2003).</p></li>
-<li><p><strong>Estabilizar la Serie:</strong> Transformar los precios en retornos logarítmicos para obtener una serie con varianza estable y propiedades estadísticas interpretables (Hudson y Litzenberg, 2015).</p></li>
+<li><p><strong>Validar Estacionariedad:</strong> Aplicar la prueba ADF para identificar la presencia de raíces unitarias en la serie de precios de MSFT.</p></li>
+<li><p><strong>Identificar Tendencia:</strong> Implementar medias móviles en ventana diaria, trimestral y anual <span class="math notranslate nohighlight">\((n=1, n= 60, n=252)\)</span> como herramienta de suavizamiento para mitigar el ruido en la serie temporal.</p></li>
+<li><p><strong>Analizar Riesgo:</strong> Determinar el grado de Leptocurtosis en la distribución de los retornos logarítmicos como medida del riesgo de cola.</p></li>
+<li><p><strong>Estabilizar la Serie:</strong> Transformar los precios en retornos logarítmicos para obtener una serie con varianza estable y propiedades estadísticas interpretables.</p></li>
 </ul>
 </section>
 </section>
@@ -495,6 +497,13 @@ r_t = \frac{P_t - P_{t-1}}{P_{t-1}}
 \[
 \sigma = \sqrt{\frac{1}{n-1} \sum_{t=1}^{n} (r_t - \bar{r})^2}
 \]</div>
+</section>
+<section id="estabilizacion-de-la-serie-retornos-logaritmicos">
+<h3>Estabilización de la Serie: Retornos Logarítmicos<a class="headerlink" href="#estabilizacion-de-la-serie-retornos-logaritmicos" title="Link to this heading">#</a></h3>
+<p>Dado que los precios de los activos suelen exhibir tendencias estocásticas y variabilidad no constante, se procede a transformar los precios en <strong>retornos logarítmicos</strong>. Esta transformación busca obtener una serie con varianza más estable y propiedades estadísticas interpretables (<strong>Hudson y Litzenberg, 2015</strong>). El retorno logarítmico se define como:</p>
+<div class="math notranslate nohighlight">
+\[r_t = \ln(P_t) - \ln(P_{t-1})\]</div>
+<p>A diferencia del retorno simple, los log-retornos facilitan la agregación temporal y suelen presentar una distribución más cercana a la normalidad, aunque conservan características críticas para el análisis de riesgo.</p>
 </section>
 <section id="modelos-de-descomposicion">
 <h3>Modelos de Descomposición<a class="headerlink" href="#modelos-de-descomposicion" title="Link to this heading">#</a></h3>
@@ -526,6 +535,20 @@ Y_t = T_t \times S_t \times E_t
 <section id="prueba-de-dickey-fuller-aumentada-adf">
 <h3>Prueba de Dickey-Fuller Aumentada (ADF)<a class="headerlink" href="#prueba-de-dickey-fuller-aumentada-adf" title="Link to this heading">#</a></h3>
 <p>La prueba <strong>ADF (Augmented Dickey-Fuller)</strong> se utiliza para determinar si una serie de tiempo es <strong>estacionaria</strong> o presenta una raíz unitaria. La hipótesis nula establece que la serie no es estacionaria. Un <strong>p-valor bajo</strong> permite rechazar esta hipótesis, indicando que la serie es adecuada para modelado estadístico.</p>
+<p>dentificación de Tendencia y Suavizamiento
+Para mitigar el ruido inherente a las fluctuaciones diarias de alta frecuencia y extraer la señal de tendencia subyacente, se implementan <strong>medias móviles</strong> como herramienta de suavizamiento (<strong>Sureshkumar et al., 2013</strong>). En este estudio se utilizan ventanas temporales específicas:</p>
+<ul class="simple">
+<li><p><strong>Diaria (<span class="math notranslate nohighlight">\(n=1\)</span>):</strong> Representa la serie original sin filtrar.</p></li>
+<li><p><strong>Trimestral (<span class="math notranslate nohighlight">\(n=60\)</span>):</strong> Suaviza las fluctuaciones de corto plazo.</p></li>
+<li><p><strong>Anual (<span class="math notranslate nohighlight">\(n=252\)</span>):</strong> Filtra la volatilidad estacional para revelar la tendencia de largo plazo.</p></li>
+</ul>
+<p><strong>Identificación de Tendencia y Suavizamiento</strong>
+Para mitigar el ruido inherente a las fluctuaciones diarias de alta frecuencia y extraer la señal de tendencia subyacente, se implementan <strong>medias móviles</strong> como herramienta de suavizamiento (<strong>Sureshkumar et al., 2013</strong>). En este estudio se utilizan ventanas temporales específicas:</p>
+<ul class="simple">
+<li><p><strong>Diaria (<span class="math notranslate nohighlight">\(n=1\)</span>):</strong> Representa la serie original sin filtrar.</p></li>
+<li><p><strong>Trimestral (<span class="math notranslate nohighlight">\(n=60\)</span>):</strong> Suaviza las fluctuaciones de corto plazo.</p></li>
+<li><p><strong>Anual (<span class="math notranslate nohighlight">\(n=252\)</span>):</strong> Filtra la volatilidad estacional para revelar la tendencia de largo plazo.</p></li>
+</ul>
 </section>
 <section id="funcion-de-autocorrelacion-acf">
 <h3>Función de Autocorrelación (ACF)<a class="headerlink" href="#funcion-de-autocorrelacion-acf" title="Link to this heading">#</a></h3>
@@ -547,7 +570,7 @@ Y_t = T_t \times S_t \times E_t
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Instalar Yahoo Finance</span>
-<span class="n">Jimmy</span> <span class="n">night</span> <span class="n">install</span> <span class="n">yfinance</span>
+<span class="o">!</span>pip<span class="w"> </span>install<span class="w"> </span>yfinance
 
 <span class="c1"># Importar librerías</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
@@ -568,10 +591,87 @@ Y_t = T_t \times S_t \times E_t
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span>  <span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">2</span>
-    <span class="n">Jimmy</span> <span class="n">night</span> <span class="n">install</span> <span class="n">yfinance</span>
-          <span class="o">^</span>
-<span class="ne">SyntaxError</span>: invalid syntax
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: yfinance in c:\users\romer\miniconda3\envs\dataviz_venv\lib\site-packages (1.2.0)
+Requirement already satisfied: pandas&gt;=1.3.0 in c:\users\romer\miniconda3\envs\dataviz_venv\lib\site-packages (from yfinance) (1.3.2)
+Requirement already satisfied: numpy&gt;=1.16.5 in c:\users\romer\miniconda3\envs\dataviz_venv\lib\site-packages (from yfinance) (1.25.2)
+Requirement already satisfied: requests&gt;=2.31 in c:\users\romer\miniconda3\envs\dataviz_venv\lib\site-packages (from yfinance) (2.32.5)
+Requirement already satisfied: multitasking&gt;=0.0.7 in c:\users\romer\miniconda3\envs\dataviz_venv\lib\site-packages (from yfinance) (0.0.12)
+Requirement already satisfied: platformdirs&gt;=2.0.0 in c:\users\romer\miniconda3\envs\dataviz_venv\lib\site-packages (from yfinance) (4.3.8)
+Requirement already satisfied: pytz&gt;=2022.5 in c:\users\romer\miniconda3\envs\dataviz_venv\lib\site-packages (from yfinance) (2023.3)
+Requirement already satisfied: frozendict&gt;=2.3.4 in c:\users\romer\miniconda3\envs\dataviz_venv\lib\site-packages (from yfinance) (2.4.7)
+Requirement already satisfied: peewee&gt;=3.16.2 in c:\users\romer\miniconda3\envs\dataviz_venv\lib\site-packages (from yfinance) (4.0.0)
+Requirement already satisfied: beautifulsoup4&gt;=4.11.1 in c:\users\romer\miniconda3\envs\dataviz_venv\lib\site-packages (from yfinance) (4.12.2)
+Requirement already satisfied: curl_cffi&lt;0.14,&gt;=0.7 in c:\users\romer\miniconda3\envs\dataviz_venv\lib\site-packages (from yfinance) (0.13.0)
+Requirement already satisfied: protobuf&gt;=3.19.0 in c:\users\romer\miniconda3\envs\dataviz_venv\lib\site-packages (from yfinance) (3.19.6)
+Requirement already satisfied: websockets&gt;=13.0 in c:\users\romer\miniconda3\envs\dataviz_venv\lib\site-packages (from yfinance) (15.0.1)
+Requirement already satisfied: cffi&gt;=1.12.0 in c:\users\romer\miniconda3\envs\dataviz_venv\lib\site-packages (from curl_cffi&lt;0.14,&gt;=0.7-&gt;yfinance) (1.17.1)
+Requirement already satisfied: certifi&gt;=2024.2.2 in c:\users\romer\miniconda3\envs\dataviz_venv\lib\site-packages (from curl_cffi&lt;0.14,&gt;=0.7-&gt;yfinance) (2025.10.5)
+Requirement already satisfied: soupsieve&gt;1.2 in c:\users\romer\miniconda3\envs\dataviz_venv\lib\site-packages (from beautifulsoup4&gt;=4.11.1-&gt;yfinance) (2.5)
+Requirement already satisfied: pycparser in c:\users\romer\miniconda3\envs\dataviz_venv\lib\site-packages (from cffi&gt;=1.12.0-&gt;curl_cffi&lt;0.14,&gt;=0.7-&gt;yfinance) (2.22)
+Requirement already satisfied: python-dateutil&gt;=2.7.3 in c:\users\romer\miniconda3\envs\dataviz_venv\lib\site-packages (from pandas&gt;=1.3.0-&gt;yfinance) (2.8.2)
+Requirement already satisfied: six&gt;=1.5 in c:\users\romer\miniconda3\envs\dataviz_venv\lib\site-packages (from python-dateutil&gt;=2.7.3-&gt;pandas&gt;=1.3.0-&gt;yfinance) (1.16.0)
+Requirement already satisfied: charset_normalizer&lt;4,&gt;=2 in c:\users\romer\miniconda3\envs\dataviz_venv\lib\site-packages (from requests&gt;=2.31-&gt;yfinance) (3.4.4)
+Requirement already satisfied: idna&lt;4,&gt;=2.5 in c:\users\romer\miniconda3\envs\dataviz_venv\lib\site-packages (from requests&gt;=2.31-&gt;yfinance) (3.11)
+Requirement already satisfied: urllib3&lt;3,&gt;=1.21.1 in c:\users\romer\miniconda3\envs\dataviz_venv\lib\site-packages (from requests&gt;=2.31-&gt;yfinance) (1.26.20)
+</pre></div>
+</div>
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">AttributeError</span><span class="g g-Whitespace">                            </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">9</span>
+<span class="g g-Whitespace">      </span><span class="mi">7</span> <span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="g g-Whitespace">      </span><span class="mi">8</span> <span class="kn">import</span><span class="w"> </span><span class="nn">seaborn</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sns</span>
+<span class="ne">----&gt; </span><span class="mi">9</span> <span class="kn">import</span><span class="w"> </span><span class="nn">statsmodels.api</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sm</span>
+<span class="g g-Whitespace">     </span><span class="mi">10</span> <span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="g g-Whitespace">     </span><span class="mi">11</span> <span class="kn">from</span><span class="w"> </span><span class="nn">statsmodels.tsa.seasonal</span><span class="w"> </span><span class="kn">import</span> <span class="n">seasonal_decompose</span><span class="p">,</span> <span class="n">STL</span>
+
+<span class="n">File</span> <span class="n">c</span><span class="p">:</span>\<span class="n">Users</span>\<span class="n">romer</span>\<span class="n">miniconda3</span>\<span class="n">envs</span>\<span class="n">dataviz_venv</span>\<span class="n">lib</span>\<span class="n">site</span><span class="o">-</span><span class="n">packages</span>\<span class="n">statsmodels</span>\<span class="n">api</span><span class="o">.</span><span class="n">py</span><span class="p">:</span><span class="mi">9</span>
+<span class="g g-Whitespace">      </span><span class="mi">7</span> <span class="kn">from</span><span class="w"> </span><span class="nn">.</span><span class="w"> </span><span class="kn">import</span> <span class="n">tools</span>
+<span class="g g-Whitespace">      </span><span class="mi">8</span> <span class="kn">from</span><span class="w"> </span><span class="nn">.tools.tools</span><span class="w"> </span><span class="kn">import</span> <span class="n">add_constant</span><span class="p">,</span> <span class="n">categorical</span>
+<span class="ne">----&gt; </span><span class="mi">9</span> <span class="kn">from</span><span class="w"> </span><span class="nn">.</span><span class="w"> </span><span class="kn">import</span> <span class="n">regression</span>
+<span class="g g-Whitespace">     </span><span class="mi">10</span> <span class="kn">from</span><span class="w"> </span><span class="nn">.regression.linear_model</span><span class="w"> </span><span class="kn">import</span> <span class="n">OLS</span><span class="p">,</span> <span class="n">GLS</span><span class="p">,</span> <span class="n">WLS</span><span class="p">,</span> <span class="n">GLSAR</span>
+<span class="g g-Whitespace">     </span><span class="mi">11</span> <span class="kn">from</span><span class="w"> </span><span class="nn">.regression.recursive_ls</span><span class="w"> </span><span class="kn">import</span> <span class="n">RecursiveLS</span>
+
+<span class="n">File</span> <span class="n">c</span><span class="p">:</span>\<span class="n">Users</span>\<span class="n">romer</span>\<span class="n">miniconda3</span>\<span class="n">envs</span>\<span class="n">dataviz_venv</span>\<span class="n">lib</span>\<span class="n">site</span><span class="o">-</span><span class="n">packages</span>\<span class="n">statsmodels</span>\<span class="n">regression</span>\<span class="fm">__init__</span><span class="o">.</span><span class="n">py</span><span class="p">:</span><span class="mi">1</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="kn">from</span><span class="w"> </span><span class="nn">.linear_model</span><span class="w"> </span><span class="kn">import</span> <span class="n">yule_walker</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="kn">from</span><span class="w"> </span><span class="nn">statsmodels.tools._testing</span><span class="w"> </span><span class="kn">import</span> <span class="n">PytestTester</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="n">__all__</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;yule_walker&#39;</span><span class="p">,</span> <span class="s1">&#39;test&#39;</span><span class="p">]</span>
+
+<span class="n">File</span> <span class="n">c</span><span class="p">:</span>\<span class="n">Users</span>\<span class="n">romer</span>\<span class="n">miniconda3</span>\<span class="n">envs</span>\<span class="n">dataviz_venv</span>\<span class="n">lib</span>\<span class="n">site</span><span class="o">-</span><span class="n">packages</span>\<span class="n">statsmodels</span>\<span class="n">regression</span>\<span class="n">linear_model</span><span class="o">.</span><span class="n">py</span><span class="p">:</span><span class="mi">46</span>
+<span class="g g-Whitespace">     </span><span class="mi">43</span> <span class="kn">from</span><span class="w"> </span><span class="nn">statsmodels.tools.tools</span><span class="w"> </span><span class="kn">import</span> <span class="n">pinv_extended</span>
+<span class="g g-Whitespace">     </span><span class="mi">44</span> <span class="kn">from</span><span class="w"> </span><span class="nn">statsmodels.tools.decorators</span><span class="w"> </span><span class="kn">import</span> <span class="p">(</span><span class="n">cache_readonly</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">45</span>                                           <span class="n">cache_writable</span><span class="p">)</span>
+<span class="ne">---&gt; </span><span class="mi">46</span> <span class="kn">import</span><span class="w"> </span><span class="nn">statsmodels.base.model</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">base</span>
+<span class="g g-Whitespace">     </span><span class="mi">47</span> <span class="kn">import</span><span class="w"> </span><span class="nn">statsmodels.base.wrapper</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">wrap</span>
+<span class="g g-Whitespace">     </span><span class="mi">48</span> <span class="kn">from</span><span class="w"> </span><span class="nn">statsmodels.emplike.elregress</span><span class="w"> </span><span class="kn">import</span> <span class="n">_ELRegOpts</span>
+
+<span class="n">File</span> <span class="n">c</span><span class="p">:</span>\<span class="n">Users</span>\<span class="n">romer</span>\<span class="n">miniconda3</span>\<span class="n">envs</span>\<span class="n">dataviz_venv</span>\<span class="n">lib</span>\<span class="n">site</span><span class="o">-</span><span class="n">packages</span>\<span class="n">statsmodels</span>\<span class="n">base</span>\<span class="n">model</span><span class="o">.</span><span class="n">py</span><span class="p">:</span><span class="mi">16</span>
+<span class="g g-Whitespace">     </span><span class="mi">13</span> <span class="kn">from</span><span class="w"> </span><span class="nn">statsmodels.tools.decorators</span><span class="w"> </span><span class="kn">import</span> <span class="p">(</span><span class="n">cache_readonly</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">14</span>                                           <span class="n">cached_value</span><span class="p">,</span> <span class="n">cached_data</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">15</span> <span class="kn">import</span><span class="w"> </span><span class="nn">statsmodels.base.wrapper</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">wrap</span>
+<span class="ne">---&gt; </span><span class="mi">16</span> <span class="kn">from</span><span class="w"> </span><span class="nn">statsmodels.tools.numdiff</span><span class="w"> </span><span class="kn">import</span> <span class="n">approx_fprime</span>
+<span class="g g-Whitespace">     </span><span class="mi">17</span> <span class="kn">from</span><span class="w"> </span><span class="nn">statsmodels.tools.sm_exceptions</span><span class="w"> </span><span class="kn">import</span> <span class="n">ValueWarning</span><span class="p">,</span> \
+<span class="g g-Whitespace">     </span><span class="mi">18</span>     <span class="n">HessianInversionWarning</span>
+<span class="g g-Whitespace">     </span><span class="mi">19</span> <span class="kn">from</span><span class="w"> </span><span class="nn">statsmodels.formula</span><span class="w"> </span><span class="kn">import</span> <span class="n">handle_formula_data</span>
+
+<span class="n">File</span> <span class="n">c</span><span class="p">:</span>\<span class="n">Users</span>\<span class="n">romer</span>\<span class="n">miniconda3</span>\<span class="n">envs</span>\<span class="n">dataviz_venv</span>\<span class="n">lib</span>\<span class="n">site</span><span class="o">-</span><span class="n">packages</span>\<span class="n">statsmodels</span>\<span class="n">tools</span>\<span class="n">numdiff</span><span class="o">.</span><span class="n">py</span><span class="p">:</span><span class="mi">51</span>
+<span class="g g-Whitespace">     </span><span class="mi">48</span> <span class="kn">from</span><span class="w"> </span><span class="nn">statsmodels.compat.pandas</span><span class="w"> </span><span class="kn">import</span> <span class="n">Appender</span><span class="p">,</span> <span class="n">Substitution</span>
+<span class="g g-Whitespace">     </span><span class="mi">50</span> <span class="c1"># NOTE: we only do double precision internally so far</span>
+<span class="ne">---&gt; </span><span class="mi">51</span> <span class="n">EPS</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">MachAr</span><span class="p">()</span><span class="o">.</span><span class="n">eps</span>
+<span class="g g-Whitespace">     </span><span class="mi">53</span> <span class="n">_hessian_docs</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="g g-Whitespace">     </span><span class="mi">54</span><span class="s2">     Calculate Hessian with finite difference derivative approximation</span>
+<span class="g g-Whitespace">     </span><span class="mi">55</span><span class="s2"> </span>
+<span class="s2">   (...)</span>
+<span class="g g-Whitespace">     </span><span class="mi">90</span><span class="s2">         of numerical differentiation. The American Statistician, 63, 66-74</span>
+<span class="g g-Whitespace">     </span><span class="mi">91</span><span class="s2"> &quot;&quot;&quot;</span>
+<span class="g g-Whitespace">     </span><span class="mi">94</span> <span class="k">def</span><span class="w"> </span><span class="nf">_get_epsilon</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">s</span><span class="p">,</span> <span class="n">epsilon</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
+
+<span class="nn">File c:\Users\romer\miniconda3\envs\dataviz_venv\lib\site-packages\numpy\__init__.py:328,</span> in <span class="ni">__getattr__</span><span class="nt">(attr)</span>
+<span class="g g-Whitespace">    </span><span class="mi">325</span>     <span class="s2">&quot;Removed in NumPy 1.25.0&quot;</span>
+<span class="g g-Whitespace">    </span><span class="mi">326</span>     <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="s2">&quot;Tester was removed in NumPy 1.25.&quot;</span><span class="p">)</span>
+<span class="ne">--&gt; </span><span class="mi">328</span> <span class="k">raise</span> <span class="ne">AttributeError</span><span class="p">(</span><span class="s2">&quot;module </span><span class="si">{!r}</span><span class="s2"> has no attribute &quot;</span>
+<span class="g g-Whitespace">    </span><span class="mi">329</span>                      <span class="s2">&quot;</span><span class="si">{!r}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="vm">__name__</span><span class="p">,</span> <span class="n">attr</span><span class="p">))</span>
+
+<span class="ne">AttributeError</span>: module &#39;numpy&#39; has no attribute &#39;MachAr&#39;
 </pre></div>
 </div>
 </div>
@@ -584,12 +684,55 @@ Y_t = T_t \times S_t \times E_t
 <p>Incialmente se debe realizar una inspección general sobre el dataset seleccionado:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>jupyter<span class="w"> </span>nbconvert<span class="w"> </span>--to<span class="w"> </span>html<span class="w"> </span><span class="s2">&quot;/content/Untitled0.ipynb&quot;</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">shutil</span>
+
+<span class="n">original_path</span> <span class="o">=</span> <span class="s2">&quot;/content/Análisis de Series de Tiempo Financieras — Microsoft (MSFT).ipynb&quot;</span>
+<span class="n">temp_path</span> <span class="o">=</span> <span class="s2">&quot;/content/analysis.ipynb&quot;</span>
+
+<span class="c1"># Check if the original notebook exists</span>
+<span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">original_path</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Error: The notebook &#39;</span><span class="si">{</span><span class="n">original_path</span><span class="si">}</span><span class="s2">&#39; was not found.&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Please ensure the notebook is in the /content/ directory and the filename is exactly correct (including special characters like &#39;—&#39;).&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="c1"># Copy the notebook to a simpler name to avoid potential parsing issues</span>
+    <span class="n">shutil</span><span class="o">.</span><span class="n">copy</span><span class="p">(</span><span class="n">original_path</span><span class="p">,</span> <span class="n">temp_path</span><span class="p">)</span>
+
+    <span class="c1"># Run nbconvert on the simplified name</span>
+    <span class="c1"># --log-level=40 will show only error messages, keeping output minimal upon success</span>
+    <span class="o">!</span>jupyter<span class="w"> </span>nbconvert<span class="w"> </span>--to<span class="w"> </span>html<span class="w"> </span>--log-level<span class="o">=</span><span class="m">40</span><span class="w"> </span><span class="s2">&quot;{temp_path}&quot;</span>
+
+    <span class="c1"># Clean up the temporary file</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">temp_path</span><span class="p">)</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Notebook successfully converted to HTML at </span><span class="si">{</span><span class="n">temp_path</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;.ipynb&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;.html&#39;</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># Display files in the current directory to help locate the notebook</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">--- Files in /content/ directory ---&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="s1">&#39;/content/&#39;</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[NbConvertApp] WARNING | pattern &#39;/content/Untitled0.ipynb&#39; matched no files
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Error: The notebook &#39;/content/Análisis de Series de Tiempo Financieras — Microsoft (MSFT).ipynb&#39; was not found.
+Please ensure the notebook is in the /content/ directory and the filename is exactly correct (including special characters like &#39;—&#39;).
+
+--- Files in /content/ directory ---
+.config
+sample_data
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>jupyter<span class="w"> </span>nbconvert<span class="w"> </span>--to<span class="w"> </span>html<span class="w"> </span><span class="s2">&quot;/content/Análisis de Series de Tiempo Financieras — Microsoft (MSFT).ipynb&quot;</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[NbConvertApp] WARNING | pattern &#39;/content/Análisis de Series de Tiempo Financieras — Microsoft (MSFT).ipynb&#39; matched no files
 This application is used to convert notebook files (*.ipynb)
         to various other formats.
 
@@ -793,7 +936,8 @@ To see all available configurables, use `--help-all`.
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ticker</span> <span class="o">=</span> <span class="s1">&#39;MSFT&#39;</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">yfinance</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">yf</span>
+<span class="n">ticker</span> <span class="o">=</span> <span class="s1">&#39;MSFT&#39;</span>
 <span class="n">dfmicrosoft</span> <span class="o">=</span> <span class="n">yf</span><span class="o">.</span><span class="n">download</span><span class="p">(</span><span class="n">ticker</span><span class="p">,</span> <span class="n">start</span><span class="o">=</span><span class="s2">&quot;2000-01-01&quot;</span><span class="p">)</span>
 <span class="n">dfmicrosoft</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="n">dfmicrosoft</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">droplevel</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>  <span class="c1">#Elimina nivel del ticker</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Column names: &#39;</span><span class="p">,</span> <span class="n">dfmicrosoft</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span>
@@ -803,7 +947,9 @@ To see all available configurables, use `--help-all`.
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[*********************100%***********************]  1 of 1 completed
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_750/1285024925.py:3: FutureWarning: YF.download() has changed argument auto_adjust default to True
+  dfmicrosoft = yf.download(ticker, start=&quot;2000-01-01&quot;)
+[*********************100%***********************]  1 of 1 completed
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Column names:  Index([&#39;Close&#39;, &#39;High&#39;, &#39;Low&#39;, &#39;Open&#39;, &#39;Volume&#39;], dtype=&#39;object&#39;, name=&#39;Price&#39;)
@@ -813,7 +959,7 @@ To see all available configurables, use `--help-all`.
 </pre></div>
 </div>
 <div class="output text_html">
-  <div id="df-8be93488-9a0c-43da-8544-7111ffe4fbae" class="colab-df-container">
+  <div id="df-07e47165-f24c-4af7-aa36-11cfc2272665" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -850,42 +996,42 @@ To see all available configurables, use `--help-all`.
   <tbody>
     <tr>
       <th>2000-01-03</th>
-      <td>35.520374</td>
-      <td>36.148885</td>
-      <td>34.130033</td>
-      <td>35.767969</td>
+      <td>35.520378</td>
+      <td>36.148889</td>
+      <td>34.130036</td>
+      <td>35.767973</td>
       <td>53228400</td>
     </tr>
     <tr>
       <th>2000-01-04</th>
-      <td>34.320503</td>
-      <td>35.691800</td>
-      <td>34.206229</td>
-      <td>34.606190</td>
+      <td>34.320488</td>
+      <td>35.691784</td>
+      <td>34.206213</td>
+      <td>34.606175</td>
       <td>54119000</td>
     </tr>
     <tr>
       <th>2000-01-05</th>
-      <td>34.682358</td>
-      <td>35.463235</td>
-      <td>33.330108</td>
-      <td>33.863389</td>
+      <td>34.682369</td>
+      <td>35.463246</td>
+      <td>33.330119</td>
+      <td>33.863401</td>
       <td>64059600</td>
     </tr>
     <tr>
       <th>2000-01-06</th>
-      <td>33.520554</td>
-      <td>34.701391</td>
-      <td>33.025364</td>
-      <td>34.187156</td>
+      <td>33.520584</td>
+      <td>34.701423</td>
+      <td>33.025394</td>
+      <td>34.187187</td>
       <td>54976600</td>
     </tr>
     <tr>
       <th>2000-01-07</th>
-      <td>33.958626</td>
-      <td>34.206221</td>
-      <td>32.701604</td>
-      <td>33.101566</td>
+      <td>33.958630</td>
+      <td>34.206225</td>
+      <td>32.701608</td>
+      <td>33.101569</td>
       <td>62013600</td>
     </tr>
   </tbody>
@@ -894,7 +1040,7 @@ To see all available configurables, use `--help-all`.
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-8be93488-9a0c-43da-8544-7111ffe4fbae')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-07e47165-f24c-4af7-aa36-11cfc2272665')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
 
@@ -946,12 +1092,12 @@ To see all available configurables, use `--help-all`.
 
     <script>
       const buttonEl =
-        document.querySelector('#df-8be93488-9a0c-43da-8544-7111ffe4fbae button.colab-df-convert');
+        document.querySelector('#df-07e47165-f24c-4af7-aa36-11cfc2272665 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-8be93488-9a0c-43da-8544-7111ffe4fbae');
+        const element = document.querySelector('#df-07e47165-f24c-4af7-aa36-11cfc2272665');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -1125,7 +1271,7 @@ La variable fecha no aparece dentro de data.dtypes porque no es una columna, sin
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Extraer variables clave para el análisis de volatilidad</span>
-<span class="n">close_series</span> <span class="o">=</span> <span class="n">dfmicrosoft</span><span class="p">[[</span><span class="s1">&#39;Close&#39;</span><span class="p">]]</span>           <span class="c1"># Precio de cierre</span>
+<span class="n">close_series</span> <span class="o">=</span> <span class="n">dfmicrosoft</span><span class="p">[[</span><span class="s1">&#39;Close&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>           <span class="c1"># Precio de cierre</span>
 <span class="n">close_series</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Close&#39;</span><span class="p">]</span>       <span class="c1"># Renombra la columna para facilitar su acceso</span>
 <span class="n">close_series</span>
 </pre></div>
@@ -1133,7 +1279,7 @@ La variable fecha no aparece dentro de data.dtypes porque no es una columna, sin
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-a0a9ac37-2988-4bcf-a33c-f5756b730a6b" class="colab-df-container">
+  <div id="df-a46573eb-b380-44bd-bf4e-672cbeca770e" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -1162,23 +1308,23 @@ La variable fecha no aparece dentro de data.dtypes porque no es una columna, sin
   <tbody>
     <tr>
       <th>2000-01-03</th>
-      <td>35.520374</td>
+      <td>35.520378</td>
     </tr>
     <tr>
       <th>2000-01-04</th>
-      <td>34.320503</td>
+      <td>34.320488</td>
     </tr>
     <tr>
       <th>2000-01-05</th>
-      <td>34.682358</td>
+      <td>34.682369</td>
     </tr>
     <tr>
       <th>2000-01-06</th>
-      <td>33.520554</td>
+      <td>33.520584</td>
     </tr>
     <tr>
       <th>2000-01-07</th>
-      <td>33.958626</td>
+      <td>33.958630</td>
     </tr>
     <tr>
       <th>...</th>
@@ -1211,7 +1357,7 @@ La variable fecha no aparece dentro de data.dtypes porque no es una columna, sin
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-a0a9ac37-2988-4bcf-a33c-f5756b730a6b')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-a46573eb-b380-44bd-bf4e-672cbeca770e')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
 
@@ -1263,12 +1409,12 @@ La variable fecha no aparece dentro de data.dtypes porque no es una columna, sin
 
     <script>
       const buttonEl =
-        document.querySelector('#df-a0a9ac37-2988-4bcf-a33c-f5756b730a6b button.colab-df-convert');
+        document.querySelector('#df-a46573eb-b380-44bd-bf4e-672cbeca770e button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-a0a9ac37-2988-4bcf-a33c-f5756b730a6b');
+        const element = document.querySelector('#df-a46573eb-b380-44bd-bf4e-672cbeca770e');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -1288,7 +1434,7 @@ La variable fecha no aparece dentro de data.dtypes porque no es una columna, sin
   </div>
 
 
-  <div id="id_b9d6f894-61c2-4cc4-acec-a86865b302e6">
+  <div id="id_54266250-5cd3-4792-baf1-44828396c778">
     <style>
       .colab-df-generate {
         background-color: #E8F0FE;
@@ -1332,7 +1478,7 @@ La variable fecha no aparece dentro de data.dtypes porque no es una columna, sin
     <script>
       (() => {
       const buttonEl =
-        document.querySelector('#id_b9d6f894-61c2-4cc4-acec-a86865b302e6 button.colab-df-generate');
+        document.querySelector('#id_54266250-5cd3-4792-baf1-44828396c778 button.colab-df-generate');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
@@ -1361,7 +1507,7 @@ La variable fecha no aparece dentro de data.dtypes porque no es una columna, sin
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-4b46216f-5a58-467c-a78a-f9a586169f64" class="colab-df-container">
+  <div id="df-10510f40-61f0-415a-a807-a12eb8b57a91" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -1394,7 +1540,7 @@ La variable fecha no aparece dentro de data.dtypes porque no es una columna, sin
     </tr>
     <tr>
       <th>std</th>
-      <td>132.559089</td>
+      <td>132.559090</td>
     </tr>
     <tr>
       <th>min</th>
@@ -1402,19 +1548,19 @@ La variable fecha no aparece dentro de data.dtypes porque no es una columna, sin
     </tr>
     <tr>
       <th>25%</th>
-      <td>18.987720</td>
+      <td>18.987722</td>
     </tr>
     <tr>
       <th>50%</th>
-      <td>25.980844</td>
+      <td>25.980840</td>
     </tr>
     <tr>
       <th>75%</th>
-      <td>129.123379</td>
+      <td>129.123367</td>
     </tr>
     <tr>
       <th>max</th>
-      <td>539.825195</td>
+      <td>539.825256</td>
     </tr>
   </tbody>
 </table>
@@ -1422,7 +1568,7 @@ La variable fecha no aparece dentro de data.dtypes porque no es una columna, sin
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-4b46216f-5a58-467c-a78a-f9a586169f64')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-10510f40-61f0-415a-a807-a12eb8b57a91')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
 
@@ -1474,12 +1620,12 @@ La variable fecha no aparece dentro de data.dtypes porque no es una columna, sin
 
     <script>
       const buttonEl =
-        document.querySelector('#df-4b46216f-5a58-467c-a78a-f9a586169f64 button.colab-df-convert');
+        document.querySelector('#df-10510f40-61f0-415a-a807-a12eb8b57a91 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-4b46216f-5a58-467c-a78a-f9a586169f64');
+        const element = document.querySelector('#df-10510f40-61f0-415a-a807-a12eb8b57a91');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -1519,7 +1665,7 @@ La variable fecha no aparece dentro de data.dtypes porque no es una columna, sin
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-913ce834-9bc1-44f9-902d-99a8c3527270" class="colab-df-container">
+  <div id="df-fddf3370-faf6-4dc9-85a8-38114dfb81c2" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -1548,23 +1694,23 @@ La variable fecha no aparece dentro de data.dtypes porque no es una columna, sin
   <tbody>
     <tr>
       <th>2000-01-03</th>
-      <td>35.520374</td>
+      <td>35.520378</td>
     </tr>
     <tr>
       <th>2000-01-04</th>
-      <td>34.320503</td>
+      <td>34.320488</td>
     </tr>
     <tr>
       <th>2000-01-05</th>
-      <td>34.682358</td>
+      <td>34.682369</td>
     </tr>
     <tr>
       <th>2000-01-06</th>
-      <td>33.520554</td>
+      <td>33.520584</td>
     </tr>
     <tr>
       <th>2000-01-07</th>
-      <td>33.958626</td>
+      <td>33.958630</td>
     </tr>
   </tbody>
 </table>
@@ -1572,7 +1718,7 @@ La variable fecha no aparece dentro de data.dtypes porque no es una columna, sin
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-913ce834-9bc1-44f9-902d-99a8c3527270')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-fddf3370-faf6-4dc9-85a8-38114dfb81c2')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
 
@@ -1624,12 +1770,12 @@ La variable fecha no aparece dentro de data.dtypes porque no es una columna, sin
 
     <script>
       const buttonEl =
-        document.querySelector('#df-913ce834-9bc1-44f9-902d-99a8c3527270 button.colab-df-convert');
+        document.querySelector('#df-fddf3370-faf6-4dc9-85a8-38114dfb81c2 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-913ce834-9bc1-44f9-902d-99a8c3527270');
+        const element = document.querySelector('#df-fddf3370-faf6-4dc9-85a8-38114dfb81c2');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -1661,7 +1807,7 @@ La variable fecha no aparece dentro de data.dtypes porque no es una columna, sin
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-cffa179f-c3d8-450f-9c2b-9323d05dc762" class="colab-df-container">
+  <div id="df-66a4afcd-2850-4b18-a45f-19b473c27961" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -1714,7 +1860,7 @@ La variable fecha no aparece dentro de data.dtypes porque no es una columna, sin
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-cffa179f-c3d8-450f-9c2b-9323d05dc762')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-66a4afcd-2850-4b18-a45f-19b473c27961')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
 
@@ -1766,12 +1912,12 @@ La variable fecha no aparece dentro de data.dtypes porque no es una columna, sin
 
     <script>
       const buttonEl =
-        document.querySelector('#df-cffa179f-c3d8-450f-9c2b-9323d05dc762 button.colab-df-convert');
+        document.querySelector('#df-66a4afcd-2850-4b18-a45f-19b473c27961 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-cffa179f-c3d8-450f-9c2b-9323d05dc762');
+        const element = document.querySelector('#df-66a4afcd-2850-4b18-a45f-19b473c27961');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -1803,7 +1949,9 @@ La variable fecha no aparece dentro de data.dtypes porque no es una columna, sin
 <h2>Visualización temporal<a class="headerlink" href="#visualizacion-temporal" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Filtrar filas donde Close no sea nulo</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+
+<span class="c1"># Filtrar filas donde Close no sea nulo</span>
 <span class="n">df_plot</span> <span class="o">=</span> <span class="n">close_series</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="o">~</span><span class="n">pd</span><span class="o">.</span><span class="n">isnull</span><span class="p">(</span><span class="n">close_series</span><span class="p">[</span><span class="s1">&#39;Close&#39;</span><span class="p">]),</span> <span class="p">:]</span>
 
 <span class="c1"># Fechas dinámicas</span>
@@ -1826,7 +1974,7 @@ La variable fecha no aparece dentro de data.dtypes porque no es una columna, sin
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/16567511205c75e7793b65809aa18b6b49b58edf44116c8d5556bab2510ae4ca.png" src="_images/16567511205c75e7793b65809aa18b6b49b58edf44116c8d5556bab2510ae4ca.png" />
+<img alt="_images/35bb3457a62bd634824fc9ed328aa994ada8237f4ce0276546a1ff337a7b18fb.png" src="_images/35bb3457a62bd634824fc9ed328aa994ada8237f4ce0276546a1ff337a7b18fb.png" />
 </div>
 </div>
 <p>La gráfica muestra la evolución histórica del precio de cierre de la acción de Microsoft desde el año 2000 hasta 2026. Se observa claramente una tendencia creciente de largo plazo, especialmente marcada a partir de 2013–2014, donde el precio inicia una fase de expansión sostenida. Durante los primeros años (2000–2010), el precio se mantiene relativamente estable, con fluctuaciones moderadas y sin una tendencia pronunciada. Posteriormente, se identifica un cambio estructural en la dinámica del activo, caracterizado por un crecimiento acelerado que lleva el precio desde niveles cercanos a 30–40 USD hasta superar los 500 USD en años recientes.</p>
@@ -1850,8 +1998,16 @@ r_t = \ln\left(\frac{P_t}{P_{t-1}}\right)
 </div>
 </div>
 <div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_750/1063379009.py:2: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  close_series[&#39;Returns&#39;] = close_series[&#39;Close&#39;].pct_change()
+</pre></div>
+</div>
 <div class="output text_html">
-  <div id="df-06817344-3bf8-47e7-86cf-d817f156034c" class="colab-df-container">
+  <div id="df-5db05588-376b-4d22-b169-d41caa6dc9f2" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -1882,28 +2038,28 @@ r_t = \ln\left(\frac{P_t}{P_{t-1}}\right)
   <tbody>
     <tr>
       <th>2000-01-03</th>
-      <td>35.520374</td>
+      <td>35.520378</td>
       <td>NaN</td>
     </tr>
     <tr>
       <th>2000-01-04</th>
-      <td>34.320503</td>
+      <td>34.320488</td>
       <td>-0.033780</td>
     </tr>
     <tr>
       <th>2000-01-05</th>
-      <td>34.682358</td>
-      <td>0.010543</td>
+      <td>34.682369</td>
+      <td>0.010544</td>
     </tr>
     <tr>
       <th>2000-01-06</th>
-      <td>33.520554</td>
+      <td>33.520584</td>
       <td>-0.033498</td>
     </tr>
     <tr>
       <th>2000-01-07</th>
-      <td>33.958626</td>
-      <td>0.013069</td>
+      <td>33.958630</td>
+      <td>0.013068</td>
     </tr>
   </tbody>
 </table>
@@ -1911,7 +2067,7 @@ r_t = \ln\left(\frac{P_t}{P_{t-1}}\right)
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-06817344-3bf8-47e7-86cf-d817f156034c')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-5db05588-376b-4d22-b169-d41caa6dc9f2')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
 
@@ -1963,12 +2119,12 @@ r_t = \ln\left(\frac{P_t}{P_{t-1}}\right)
 
     <script>
       const buttonEl =
-        document.querySelector('#df-06817344-3bf8-47e7-86cf-d817f156034c button.colab-df-convert');
+        document.querySelector('#df-5db05588-376b-4d22-b169-d41caa6dc9f2 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-06817344-3bf8-47e7-86cf-d817f156034c');
+        const element = document.querySelector('#df-5db05588-376b-4d22-b169-d41caa6dc9f2');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -2007,7 +2163,8 @@ r_t = \ln\left(\frac{P_t}{P_{t-1}}\right)
 <p>Ahora pasemos con el análisis estadistico del retorno diario:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Convertir a arrays numpy</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="c1">#Convertir a arrays numpy</span>
 <span class="n">close_np</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">close_series</span><span class="p">[</span><span class="s1">&#39;Close&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">dropna</span><span class="p">())</span>
 <span class="n">returns_np</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">close_series</span><span class="p">[</span><span class="s1">&#39;Returns&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">dropna</span><span class="p">())</span>
 <span class="c1"># Gráfico de retornos en el tiempo</span>
@@ -2038,7 +2195,7 @@ r_t = \ln\left(\frac{P_t}{P_{t-1}}\right)
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/5aa5ea12b15f0e65f8e415e7725c940ec664980c1cbe6b515f4cc120b9ae0562.png" src="_images/5aa5ea12b15f0e65f8e415e7725c940ec664980c1cbe6b515f4cc120b9ae0562.png" />
+<img alt="_images/939c91385a83f32d79a75e281505cdca60afe52d46315f7abeb41b0698fbfe80.png" src="_images/939c91385a83f32d79a75e281505cdca60afe52d46315f7abeb41b0698fbfe80.png" />
 </div>
 </div>
 <p>La gráfica muestra el comportamiento de los retornos diarios de la acción de Microsoft a lo largo del período 2000–2026. Se observa que los retornos fluctúan alrededor de cero, lo que indica que no existe una tendencia determinística en las variaciones porcentuales, a diferencia del precio en niveles. Un aspecto fundamental que se evidencia en la gráfica es el clustering de volatilidad: los movimientos de gran magnitud tienden a agruparse en ciertos períodos específicos. Es decir, fases de alta volatilidad (con retornos extremos positivos y negativos) son seguidas por otros días igualmente volátiles, mientras que existen intervalos prolongados donde los retornos son relativamente pequeños y estables.</p>
@@ -2048,7 +2205,8 @@ r_t = \ln\left(\frac{P_t}{P_{t-1}}\right)
 <h2>Distribución de los retornos<a class="headerlink" href="#distribucion-de-los-retornos" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Calcular returns si no existen</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">seaborn</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sns</span>
+<span class="c1"># Calcular returns si no existen</span>
 <span class="n">close_series</span><span class="p">[</span><span class="s1">&#39;Returns&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">close_series</span><span class="p">[</span><span class="s1">&#39;Close&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">pct_change</span><span class="p">()</span>
 
 <span class="c1"># Convertir a arrays numpy</span>
@@ -2073,7 +2231,7 @@ r_t = \ln\left(\frac{P_t}{P_{t-1}}\right)
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/0ad8cd031c4fa0124060bfcbb333d28ecdc178ac9c9e70ef3b707fac6df1e3ab.png" src="_images/0ad8cd031c4fa0124060bfcbb333d28ecdc178ac9c9e70ef3b707fac6df1e3ab.png" />
+<img alt="_images/ca39361e456e2f774dbf61c5d038dd0817537e6cd2044eafe621e8941872b441.png" src="_images/ca39361e456e2f774dbf61c5d038dd0817537e6cd2044eafe621e8941872b441.png" />
 </div>
 </div>
 <p>La distribución de los retornos diarios muestra que la mayoría de las variaciones porcentuales se concentran alrededor de cero, lo cual es consistente con el comportamiento típico de los activos financieros: en la mayoría de los días los movimientos son relativamente pequeños. La media aproximada de 0.0005 (0.05%) indica que, en promedio, la acción presenta un rendimiento diario ligeramente positivo en el largo plazo. Sin embargo, la media es muy cercana a cero en comparación con la dispersión, lo que sugiere que el comportamiento diario está dominado por la volatilidad más que por la tendencia.
@@ -2095,7 +2253,9 @@ La forma de la distribución es aproximadamente simétrica alrededor de cero, pe
 <p>Junto a la descomposición, también se realizará la prueba ADF. La prueba ADF (Augmented Dickey-Fuller) es un método estadístico utilizado en el análisis de series de tiempo para determinar si una serie, como los retornos financieros, es estacionaria o presenta una raíz unitaria. En un EDA, se aplica sobre los retornos para verificar si sus propiedades estadísticas (media y varianza) se mantienen constantes en el tiempo, lo cual es un supuesto clave para muchos modelos. Generalmente, los retornos tienden a ser estacionarios, y un resultado significativo en la prueba ADF (p-valor bajo) indica que se puede rechazar la hipótesis nula de no estacionariedad, validando así su uso en modelado financiero.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Usamos Close para la descomposición</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">statsmodels.tsa.seasonal</span><span class="w"> </span><span class="kn">import</span> <span class="n">seasonal_decompose</span>
+
+<span class="c1"># Usamos Close para la descomposición</span>
 <span class="c1"># Resampleamos a frecuencia mensual para que la estacionalidad sea más clara</span>
 <span class="n">serie</span> <span class="o">=</span> <span class="n">close_series</span><span class="p">[</span><span class="s1">&#39;Close&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">resample</span><span class="p">(</span><span class="s1">&#39;ME&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span>
 
@@ -2132,7 +2292,7 @@ La forma de la distribución es aproximadamente simétrica alrededor de cero, pe
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/79a1b826edc4c79eb36439c2d67f7b52a5701fc6e52aea4dd3f39afb5cf1b963.png" src="_images/79a1b826edc4c79eb36439c2d67f7b52a5701fc6e52aea4dd3f39afb5cf1b963.png" />
+<img alt="_images/e063328553c3918c25e06848427f315c6fc84bd38c1a2629c4b19b178efcf446.png" src="_images/e063328553c3918c25e06848427f315c6fc84bd38c1a2629c4b19b178efcf446.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -2158,10 +2318,235 @@ La forma de la distribución es aproximadamente simétrica alrededor de cero, pe
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Estadístico ADF para Close: 0.7140426097844653
-p-valor: 0.9901139875611532
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Estadístico ADF para Close: 0.7140416165747457
+p-valor: 0.9901139683208092
+</pre></div>
+</div>
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">KeyError</span><span class="g g-Whitespace">                                  </span>Traceback (most recent call last)
+<span class="nn">/usr/local/lib/python3.12/dist-packages/pandas/core/indexes/base.py</span> in <span class="ni">get_loc</span><span class="nt">(self, key)</span>
+<span class="g g-Whitespace">   </span><span class="mi">3804</span>         <span class="k">try</span><span class="p">:</span>
+<span class="ne">-&gt; </span><span class="mi">3805</span>             <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_engine</span><span class="o">.</span><span class="n">get_loc</span><span class="p">(</span><span class="n">casted_key</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">3806</span>         <span class="k">except</span> <span class="ne">KeyError</span> <span class="k">as</span> <span class="n">err</span><span class="p">:</span>
 
-Estadístico ADF para Retornos: -28.064452920115762
+<span class="nn">index.pyx</span> in <span class="ni">pandas._libs.index.IndexEngine.get_loc</span><span class="nt">()</span>
+
+<span class="nn">index.pyx</span> in <span class="ni">pandas._libs.index.IndexEngine.get_loc</span><span class="nt">()</span>
+
+<span class="nn">pandas/_libs/hashtable_class_helper.pxi</span> in <span class="ni">pandas._libs.hashtable.PyObjectHashTable.get_item</span><span class="nt">()</span>
+
+<span class="nn">pandas/_libs/hashtable_class_helper.pxi</span> in <span class="ni">pandas._libs.hashtable.PyObjectHashTable.get_item</span><span class="nt">()</span>
+
+<span class="ne">KeyError</span>: &#39;Returns&#39;
+
+<span class="n">The</span> <span class="n">above</span> <span class="n">exception</span> <span class="n">was</span> <span class="n">the</span> <span class="n">direct</span> <span class="n">cause</span> <span class="n">of</span> <span class="n">the</span> <span class="n">following</span> <span class="n">exception</span><span class="p">:</span>
+
+<span class="ne">KeyError</span><span class="g g-Whitespace">                                  </span>Traceback (most recent call last)
+<span class="nn">/tmp/ipykernel_750/3873199625.py</span> in <span class="ni">&lt;cell line: 0&gt;</span><span class="nt">()</span>
+<span class="g g-Whitespace">     </span><span class="mi">10</span> <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">11</span> 
+<span class="ne">---&gt; </span><span class="mi">12</span> <span class="n">returns</span> <span class="o">=</span> <span class="n">close_series</span><span class="p">[</span><span class="s1">&#39;Returns&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span>
+<span class="g g-Whitespace">     </span><span class="mi">13</span> <span class="c1">#Aplicar prueba ADF para retornos</span>
+<span class="g g-Whitespace">     </span><span class="mi">14</span> <span class="n">adf_result2</span> <span class="o">=</span> <span class="n">adfuller</span><span class="p">(</span><span class="n">returns</span><span class="p">)</span>
+
+<span class="nn">/usr/local/lib/python3.12/dist-packages/pandas/core/frame.py</span> in <span class="ni">__getitem__</span><span class="nt">(self, key)</span>
+<span class="g g-Whitespace">   </span><span class="mi">4100</span>             <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">nlevels</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
+<span class="g g-Whitespace">   </span><span class="mi">4101</span>                 <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_getitem_multilevel</span><span class="p">(</span><span class="n">key</span><span class="p">)</span>
+<span class="ne">-&gt; </span><span class="mi">4102</span>             <span class="n">indexer</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">get_loc</span><span class="p">(</span><span class="n">key</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">4103</span>             <span class="k">if</span> <span class="n">is_integer</span><span class="p">(</span><span class="n">indexer</span><span class="p">):</span>
+<span class="g g-Whitespace">   </span><span class="mi">4104</span>                 <span class="n">indexer</span> <span class="o">=</span> <span class="p">[</span><span class="n">indexer</span><span class="p">]</span>
+
+<span class="nn">/usr/local/lib/python3.12/dist-packages/pandas/core/indexes/base.py</span> in <span class="ni">get_loc</span><span class="nt">(self, key)</span>
+<span class="g g-Whitespace">   </span><span class="mi">3810</span>             <span class="p">):</span>
+<span class="g g-Whitespace">   </span><span class="mi">3811</span>                 <span class="k">raise</span> <span class="n">InvalidIndexError</span><span class="p">(</span><span class="n">key</span><span class="p">)</span>
+<span class="ne">-&gt; </span><span class="mi">3812</span>             <span class="k">raise</span> <span class="ne">KeyError</span><span class="p">(</span><span class="n">key</span><span class="p">)</span> <span class="kn">from</span><span class="w"> </span><span class="nn">err</span>
+<span class="g g-Whitespace">   </span><span class="mi">3813</span>         <span class="k">except</span> <span class="ne">TypeError</span><span class="p">:</span>
+<span class="g g-Whitespace">   </span><span class="mi">3814</span>             <span class="c1"># If we have a listlike key, _check_indexing_error will raise</span>
+
+<span class="ne">KeyError</span>: &#39;Returns&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Calcular returns si no existen</span>
+<span class="n">close_series</span><span class="p">[</span><span class="s1">&#39;Returns&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">close_series</span><span class="p">[</span><span class="s1">&#39;Close&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">pct_change</span><span class="p">()</span>
+
+<span class="n">close_series</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+  <div id="df-2acd1519-ea3c-4544-9bf9-78c9374f2584" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Close</th>
+      <th>Returns</th>
+    </tr>
+    <tr>
+      <th>Date</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2000-01-03</th>
+      <td>35.520378</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2000-01-04</th>
+      <td>34.320488</td>
+      <td>-0.033780</td>
+    </tr>
+    <tr>
+      <th>2000-01-05</th>
+      <td>34.682369</td>
+      <td>0.010544</td>
+    </tr>
+    <tr>
+      <th>2000-01-06</th>
+      <td>33.520584</td>
+      <td>-0.033498</td>
+    </tr>
+    <tr>
+      <th>2000-01-07</th>
+      <td>33.958630</td>
+      <td>0.013068</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-2acd1519-ea3c-4544-9bf9-78c9374f2584')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-2acd1519-ea3c-4544-9bf9-78c9374f2584 button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-2acd1519-ea3c-4544-9bf9-78c9374f2584');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+    </div>
+  </div>
+</div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">statsmodels.tsa.stattools</span><span class="w"> </span><span class="kn">import</span> <span class="n">adfuller</span>
+
+<span class="c1">#Aplicar prueba ADF para Close</span>
+<span class="n">adf_result1</span> <span class="o">=</span> <span class="n">adfuller</span><span class="p">(</span><span class="n">close_series</span><span class="p">[</span><span class="s1">&#39;Close&#39;</span><span class="p">])</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Estadístico ADF para Close:&quot;</span><span class="p">,</span> <span class="n">adf_result1</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;p-valor:&quot;</span><span class="p">,</span> <span class="n">adf_result1</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+
+<span class="n">returns</span> <span class="o">=</span> <span class="n">close_series</span><span class="p">[</span><span class="s1">&#39;Returns&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span>
+<span class="c1">#Aplicar prueba ADF para retornos</span>
+<span class="n">adf_result2</span> <span class="o">=</span> <span class="n">adfuller</span><span class="p">(</span><span class="n">returns</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Estadístico ADF para Retornos:&quot;</span><span class="p">,</span> <span class="n">adf_result2</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;p-valor:&quot;</span><span class="p">,</span> <span class="n">adf_result2</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Estadístico ADF para Close: 0.7140416165747457
+p-valor: 0.9901139683208092
+
+Estadístico ADF para Retornos: -28.06445441407153
 p-valor: 0.0
 </pre></div>
 </div>
@@ -2957,6 +3342,10 @@ Esta prueba contrasta la hipótesis nula
 <p>En contraste, para la serie de Retornos Diarios (Returns), el estadístico ADF fue -28.0644 con un p-valor prácticamente igual a 0.0000. En este caso, el p-valor es menor que 0.05, por lo que se rechaza la hipótesis nula de raíz unitaria. Adicionalmente, el estadístico es mucho más negativo que los valores críticos, lo que proporciona evidencia contundente de estacionariedad. Esto indica que la serie de retornos no presenta tendencia determinística ni raíz unitaria, y que sus fluctuaciones se mantienen alrededor de una media constante.</p>
 <p>En conjunto, los resultados confirman un comportamiento típico de series financieras: los precios en niveles no son estacionarios, mientras que sus retornos sí lo son. Este hallazgo justifica el uso de los retornos para el modelamiento econométrico y el análisis de volatilidad, ya que la mayoría de los modelos de series de tiempo requieren estacionariedad para producir inferencias válidas.</p>
 </section>
+<section class="tex2jax_ignore mathjax_ignore" id="conlusiones">
+<h1>Conlusiones<a class="headerlink" href="#conlusiones" title="Link to this heading">#</a></h1>
+<p>Tras la evaluación rigurosa de la dinámica histórica de Microsoft (MSFT), se concluye que el activo presenta una estructura de serie de tiempo compleja cuya modelación directa en niveles de precios resultaría técnicamente inválida. La evidencia de no estacionariedad, ratificada por un p-valor de 0.9901 en la prueba ADF y una persistencia prolongada en la función de autocorrelación, confirma que la serie original está dominada por una tendencia estocástica creciente, lo que justifica la transformación obligatoria a retornos logarítmicos para estabilizar la varianza. El análisis de la distribución de estos retornos permite caracterizar el comportamiento del activo mediante una marcada leptocurtosis, indicando que el riesgo histórico está definido por una frecuencia de eventos extremos superior a la de una distribución normal, particularmente visible en las crisis financieras de las últimas dos décadas. Asimismo, la identificación de fenómenos de heterocedasticidad y clustering de volatilidad proporciona el fundamento empírico necesario para la implementación de modelos de varianza condicional, mientras que la descomposición estructural demuestra que la evolución de MSFT responde primordialmente a factores de crecimiento de largo plazo más que a patrones estacionales cíclicos. En síntesis, estos hallazgos resuelven la pregunta de investigación al establecer que la serie de MSFT requiere un tratamiento econométrico que gestione tanto la memoria en la varianza como la presencia de outliers, sentando las bases críticas para un despliegue de modelos predictivos robustos.</p>
+</section>
 <section class="tex2jax_ignore mathjax_ignore" id="fuentes">
 <h1>Fuentes<a class="headerlink" href="#fuentes" title="Link to this heading">#</a></h1>
 <p>**Hasan, M. (s.f.). Microsoft Stock Price Analysis using GARCH model in R. RPubs. <a class="reference external" href="https://rpubs.com/Mahmud_Hasan/778532">https://rpubs.com/Mahmud_Hasan/778532</a> **</p>
@@ -3020,7 +3409,7 @@ Esta prueba contrasta la hipótesis nula
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Análisis de Series de Tiempo Financieras — Microsoft (MSFT)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Análisis Exploratorio de Datos Financieros para la Identificación de Estructuras Latentes en las Acciones de Microsoft (2000 - 2026)</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduccion">Introducción</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contextualizacion">Contextualización</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#planteamiento-del-problema">Planteamiento del Problema</a><ul class="nav section-nav flex-column">
@@ -3035,6 +3424,7 @@ Esta prueba contrasta la hipótesis nula
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#marco-teorico">Marco Teórico</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#retorno">Retorno</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#volatilidad">Volatilidad</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#estabilizacion-de-la-serie-retornos-logaritmicos">Estabilización de la Serie: Retornos Logarítmicos</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modelos-de-descomposicion">Modelos de Descomposición</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#modelo-aditivo">Modelo Aditivo</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#modelo-multiplicativo">Modelo Multiplicativo</a></li>
@@ -3071,6 +3461,7 @@ Esta prueba contrasta la hipótesis nula
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#estabilidad-de-la-serie">Estabilidad de la serie</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#conlusiones">Conlusiones</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#fuentes">Fuentes</a></li>
 </ul>
 

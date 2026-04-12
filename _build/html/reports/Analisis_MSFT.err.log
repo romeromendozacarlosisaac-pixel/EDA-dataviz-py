@@ -23,7 +23,7 @@ Traceback (most recent call last):
 nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
 ------------------
 # Instalar Yahoo Finance
-Jimmy night install yfinance
+!pip install yfinance
 
 # Importar librerías
 import pandas as pd
@@ -42,10 +42,86 @@ import warnings
 warnings.filterwarnings("ignore")
 ------------------
 
+----- stdout -----
+Requirement already satisfied: yfinance in c:\users\romer\miniconda3\envs\dataviz_venv\lib\site-packages (1.2.0)
+Requirement already satisfied: pandas>=1.3.0 in c:\users\romer\miniconda3\envs\dataviz_venv\lib\site-packages (from yfinance) (1.3.2)
+Requirement already satisfied: numpy>=1.16.5 in c:\users\romer\miniconda3\envs\dataviz_venv\lib\site-packages (from yfinance) (1.25.2)
+Requirement already satisfied: requests>=2.31 in c:\users\romer\miniconda3\envs\dataviz_venv\lib\site-packages (from yfinance) (2.32.5)
+Requirement already satisfied: multitasking>=0.0.7 in c:\users\romer\miniconda3\envs\dataviz_venv\lib\site-packages (from yfinance) (0.0.12)
+Requirement already satisfied: platformdirs>=2.0.0 in c:\users\romer\miniconda3\envs\dataviz_venv\lib\site-packages (from yfinance) (4.3.8)
+Requirement already satisfied: pytz>=2022.5 in c:\users\romer\miniconda3\envs\dataviz_venv\lib\site-packages (from yfinance) (2023.3)
+Requirement already satisfied: frozendict>=2.3.4 in c:\users\romer\miniconda3\envs\dataviz_venv\lib\site-packages (from yfinance) (2.4.7)
+Requirement already satisfied: peewee>=3.16.2 in c:\users\romer\miniconda3\envs\dataviz_venv\lib\site-packages (from yfinance) (4.0.0)
+Requirement already satisfied: beautifulsoup4>=4.11.1 in c:\users\romer\miniconda3\envs\dataviz_venv\lib\site-packages (from yfinance) (4.12.2)
+Requirement already satisfied: curl_cffi<0.14,>=0.7 in c:\users\romer\miniconda3\envs\dataviz_venv\lib\site-packages (from yfinance) (0.13.0)
+Requirement already satisfied: protobuf>=3.19.0 in c:\users\romer\miniconda3\envs\dataviz_venv\lib\site-packages (from yfinance) (3.19.6)
+Requirement already satisfied: websockets>=13.0 in c:\users\romer\miniconda3\envs\dataviz_venv\lib\site-packages (from yfinance) (15.0.1)
+Requirement already satisfied: cffi>=1.12.0 in c:\users\romer\miniconda3\envs\dataviz_venv\lib\site-packages (from curl_cffi<0.14,>=0.7->yfinance) (1.17.1)
+Requirement already satisfied: certifi>=2024.2.2 in c:\users\romer\miniconda3\envs\dataviz_venv\lib\site-packages (from curl_cffi<0.14,>=0.7->yfinance) (2025.10.5)
+Requirement already satisfied: soupsieve>1.2 in c:\users\romer\miniconda3\envs\dataviz_venv\lib\site-packages (from beautifulsoup4>=4.11.1->yfinance) (2.5)
+Requirement already satisfied: pycparser in c:\users\romer\miniconda3\envs\dataviz_venv\lib\site-packages (from cffi>=1.12.0->curl_cffi<0.14,>=0.7->yfinance) (2.22)
+Requirement already satisfied: python-dateutil>=2.7.3 in c:\users\romer\miniconda3\envs\dataviz_venv\lib\site-packages (from pandas>=1.3.0->yfinance) (2.8.2)
+Requirement already satisfied: six>=1.5 in c:\users\romer\miniconda3\envs\dataviz_venv\lib\site-packages (from python-dateutil>=2.7.3->pandas>=1.3.0->yfinance) (1.16.0)
+Requirement already satisfied: charset_normalizer<4,>=2 in c:\users\romer\miniconda3\envs\dataviz_venv\lib\site-packages (from requests>=2.31->yfinance) (3.4.4)
+Requirement already satisfied: idna<4,>=2.5 in c:\users\romer\miniconda3\envs\dataviz_venv\lib\site-packages (from requests>=2.31->yfinance) (3.11)
+Requirement already satisfied: urllib3<3,>=1.21.1 in c:\users\romer\miniconda3\envs\dataviz_venv\lib\site-packages (from requests>=2.31->yfinance) (1.26.20)
+------------------
 
-[1;36m  Cell [1;32mIn[1], line 2[1;36m[0m
-[1;33m    Jimmy night install yfinance[0m
-[1;37m          ^[0m
-[1;31mSyntaxError[0m[1;31m:[0m invalid syntax
+[1;31m---------------------------------------------------------------------------[0m
+[1;31mAttributeError[0m                            Traceback (most recent call last)
+Cell [1;32mIn[1], line 9[0m
+[0;32m      7[0m [38;5;28;01mimport[39;00m[38;5;250m [39m[38;5;21;01mmatplotlib[39;00m[38;5;21;01m.[39;00m[38;5;21;01mpyplot[39;00m[38;5;250m [39m[38;5;28;01mas[39;00m[38;5;250m [39m[38;5;21;01mplt[39;00m
+[0;32m      8[0m [38;5;28;01mimport[39;00m[38;5;250m [39m[38;5;21;01mseaborn[39;00m[38;5;250m [39m[38;5;28;01mas[39;00m[38;5;250m [39m[38;5;21;01msns[39;00m
+[1;32m----> 9[0m [38;5;28;01mimport[39;00m[38;5;250m [39m[38;5;21;01mstatsmodels[39;00m[38;5;21;01m.[39;00m[38;5;21;01mapi[39;00m[38;5;250m [39m[38;5;28;01mas[39;00m[38;5;250m [39m[38;5;21;01msm[39;00m
+[0;32m     10[0m [38;5;28;01mimport[39;00m[38;5;250m [39m[38;5;21;01mnumpy[39;00m[38;5;250m [39m[38;5;28;01mas[39;00m[38;5;250m [39m[38;5;21;01mnp[39;00m
+[0;32m     11[0m [38;5;28;01mfrom[39;00m[38;5;250m [39m[38;5;21;01mstatsmodels[39;00m[38;5;21;01m.[39;00m[38;5;21;01mtsa[39;00m[38;5;21;01m.[39;00m[38;5;21;01mseasonal[39;00m[38;5;250m [39m[38;5;28;01mimport[39;00m seasonal_decompose, STL
 
+File [1;32mc:\Users\romer\miniconda3\envs\dataviz_venv\lib\site-packages\statsmodels\api.py:9[0m
+[0;32m      7[0m [38;5;28;01mfrom[39;00m[38;5;250m [39m[38;5;21;01m.[39;00m[38;5;250m [39m[38;5;28;01mimport[39;00m tools
+[0;32m      8[0m [38;5;28;01mfrom[39;00m[38;5;250m [39m[38;5;21;01m.[39;00m[38;5;21;01mtools[39;00m[38;5;21;01m.[39;00m[38;5;21;01mtools[39;00m[38;5;250m [39m[38;5;28;01mimport[39;00m add_constant, categorical
+[1;32m----> 9[0m [38;5;28;01mfrom[39;00m[38;5;250m [39m[38;5;21;01m.[39;00m[38;5;250m [39m[38;5;28;01mimport[39;00m regression
+[0;32m     10[0m [38;5;28;01mfrom[39;00m[38;5;250m [39m[38;5;21;01m.[39;00m[38;5;21;01mregression[39;00m[38;5;21;01m.[39;00m[38;5;21;01mlinear_model[39;00m[38;5;250m [39m[38;5;28;01mimport[39;00m OLS, GLS, WLS, GLSAR
+[0;32m     11[0m [38;5;28;01mfrom[39;00m[38;5;250m [39m[38;5;21;01m.[39;00m[38;5;21;01mregression[39;00m[38;5;21;01m.[39;00m[38;5;21;01mrecursive_ls[39;00m[38;5;250m [39m[38;5;28;01mimport[39;00m RecursiveLS
+
+File [1;32mc:\Users\romer\miniconda3\envs\dataviz_venv\lib\site-packages\statsmodels\regression\__init__.py:1[0m
+[1;32m----> 1[0m [38;5;28;01mfrom[39;00m[38;5;250m [39m[38;5;21;01m.[39;00m[38;5;21;01mlinear_model[39;00m[38;5;250m [39m[38;5;28;01mimport[39;00m yule_walker
+[0;32m      3[0m [38;5;28;01mfrom[39;00m[38;5;250m [39m[38;5;21;01mstatsmodels[39;00m[38;5;21;01m.[39;00m[38;5;21;01mtools[39;00m[38;5;21;01m.[39;00m[38;5;21;01m_testing[39;00m[38;5;250m [39m[38;5;28;01mimport[39;00m PytestTester
+[0;32m      5[0m __all__ [38;5;241m=[39m [[38;5;124m'[39m[38;5;124myule_walker[39m[38;5;124m'[39m, [38;5;124m'[39m[38;5;124mtest[39m[38;5;124m'[39m]
+
+File [1;32mc:\Users\romer\miniconda3\envs\dataviz_venv\lib\site-packages\statsmodels\regression\linear_model.py:46[0m
+[0;32m     43[0m [38;5;28;01mfrom[39;00m[38;5;250m [39m[38;5;21;01mstatsmodels[39;00m[38;5;21;01m.[39;00m[38;5;21;01mtools[39;00m[38;5;21;01m.[39;00m[38;5;21;01mtools[39;00m[38;5;250m [39m[38;5;28;01mimport[39;00m pinv_extended
+[0;32m     44[0m [38;5;28;01mfrom[39;00m[38;5;250m [39m[38;5;21;01mstatsmodels[39;00m[38;5;21;01m.[39;00m[38;5;21;01mtools[39;00m[38;5;21;01m.[39;00m[38;5;21;01mdecorators[39;00m[38;5;250m [39m[38;5;28;01mimport[39;00m (cache_readonly,
+[0;32m     45[0m                                           cache_writable)
+[1;32m---> 46[0m [38;5;28;01mimport[39;00m[38;5;250m [39m[38;5;21;01mstatsmodels[39;00m[38;5;21;01m.[39;00m[38;5;21;01mbase[39;00m[38;5;21;01m.[39;00m[38;5;21;01mmodel[39;00m[38;5;250m [39m[38;5;28;01mas[39;00m[38;5;250m [39m[38;5;21;01mbase[39;00m
+[0;32m     47[0m [38;5;28;01mimport[39;00m[38;5;250m [39m[38;5;21;01mstatsmodels[39;00m[38;5;21;01m.[39;00m[38;5;21;01mbase[39;00m[38;5;21;01m.[39;00m[38;5;21;01mwrapper[39;00m[38;5;250m [39m[38;5;28;01mas[39;00m[38;5;250m [39m[38;5;21;01mwrap[39;00m
+[0;32m     48[0m [38;5;28;01mfrom[39;00m[38;5;250m [39m[38;5;21;01mstatsmodels[39;00m[38;5;21;01m.[39;00m[38;5;21;01memplike[39;00m[38;5;21;01m.[39;00m[38;5;21;01melregress[39;00m[38;5;250m [39m[38;5;28;01mimport[39;00m _ELRegOpts
+
+File [1;32mc:\Users\romer\miniconda3\envs\dataviz_venv\lib\site-packages\statsmodels\base\model.py:16[0m
+[0;32m     13[0m [38;5;28;01mfrom[39;00m[38;5;250m [39m[38;5;21;01mstatsmodels[39;00m[38;5;21;01m.[39;00m[38;5;21;01mtools[39;00m[38;5;21;01m.[39;00m[38;5;21;01mdecorators[39;00m[38;5;250m [39m[38;5;28;01mimport[39;00m (cache_readonly,
+[0;32m     14[0m                                           cached_value, cached_data)
+[0;32m     15[0m [38;5;28;01mimport[39;00m[38;5;250m [39m[38;5;21;01mstatsmodels[39;00m[38;5;21;01m.[39;00m[38;5;21;01mbase[39;00m[38;5;21;01m.[39;00m[38;5;21;01mwrapper[39;00m[38;5;250m [39m[38;5;28;01mas[39;00m[38;5;250m [39m[38;5;21;01mwrap[39;00m
+[1;32m---> 16[0m [38;5;28;01mfrom[39;00m[38;5;250m [39m[38;5;21;01mstatsmodels[39;00m[38;5;21;01m.[39;00m[38;5;21;01mtools[39;00m[38;5;21;01m.[39;00m[38;5;21;01mnumdiff[39;00m[38;5;250m [39m[38;5;28;01mimport[39;00m approx_fprime
+[0;32m     17[0m [38;5;28;01mfrom[39;00m[38;5;250m [39m[38;5;21;01mstatsmodels[39;00m[38;5;21;01m.[39;00m[38;5;21;01mtools[39;00m[38;5;21;01m.[39;00m[38;5;21;01msm_exceptions[39;00m[38;5;250m [39m[38;5;28;01mimport[39;00m ValueWarning, \
+[0;32m     18[0m     HessianInversionWarning
+[0;32m     19[0m [38;5;28;01mfrom[39;00m[38;5;250m [39m[38;5;21;01mstatsmodels[39;00m[38;5;21;01m.[39;00m[38;5;21;01mformula[39;00m[38;5;250m [39m[38;5;28;01mimport[39;00m handle_formula_data
+
+File [1;32mc:\Users\romer\miniconda3\envs\dataviz_venv\lib\site-packages\statsmodels\tools\numdiff.py:51[0m
+[0;32m     48[0m [38;5;28;01mfrom[39;00m[38;5;250m [39m[38;5;21;01mstatsmodels[39;00m[38;5;21;01m.[39;00m[38;5;21;01mcompat[39;00m[38;5;21;01m.[39;00m[38;5;21;01mpandas[39;00m[38;5;250m [39m[38;5;28;01mimport[39;00m Appender, Substitution
+[0;32m     50[0m [38;5;66;03m# NOTE: we only do double precision internally so far[39;00m
+[1;32m---> 51[0m EPS [38;5;241m=[39m [43mnp[49m[38;5;241;43m.[39;49m[43mMachAr[49m()[38;5;241m.[39meps
+[0;32m     53[0m _hessian_docs [38;5;241m=[39m [38;5;124m"""[39m
+[0;32m     54[0m [38;5;124m    Calculate Hessian with finite difference derivative approximation[39m
+[0;32m     55[0m 
+[1;32m   (...)[0m
+[0;32m     90[0m [38;5;124m        of numerical differentiation. The American Statistician, 63, 66-74[39m
+[0;32m     91[0m [38;5;124m"""[39m
+[0;32m     94[0m [38;5;28;01mdef[39;00m[38;5;250m [39m[38;5;21m_get_epsilon[39m(x, s, epsilon, n):
+
+File [1;32mc:\Users\romer\miniconda3\envs\dataviz_venv\lib\site-packages\numpy\__init__.py:328[0m, in [0;36m__getattr__[1;34m(attr)[0m
+[0;32m    325[0m     [38;5;124m"[39m[38;5;124mRemoved in NumPy 1.25.0[39m[38;5;124m"[39m
+[0;32m    326[0m     [38;5;28;01mraise[39;00m [38;5;167;01mRuntimeError[39;00m([38;5;124m"[39m[38;5;124mTester was removed in NumPy 1.25.[39m[38;5;124m"[39m)
+[1;32m--> 328[0m [38;5;28;01mraise[39;00m [38;5;167;01mAttributeError[39;00m([38;5;124m"[39m[38;5;124mmodule [39m[38;5;132;01m{!r}[39;00m[38;5;124m has no attribute [39m[38;5;124m"[39m
+[0;32m    329[0m                      [38;5;124m"[39m[38;5;132;01m{!r}[39;00m[38;5;124m"[39m[38;5;241m.[39mformat([38;5;18m__name__[39m, attr))
+
+[1;31mAttributeError[0m: module 'numpy' has no attribute 'MachAr'
 
