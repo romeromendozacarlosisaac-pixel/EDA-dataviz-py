@@ -290,5 +290,6 @@ def update_graphs(col, years):
     
     return fig1, fig2, fig3
 
+server = app.server
 if __name__ == '__main__':
     app.run(debug=True)
